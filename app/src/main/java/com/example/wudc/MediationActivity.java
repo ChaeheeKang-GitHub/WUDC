@@ -1,6 +1,7 @@
 package com.example.wudc;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,15 +28,15 @@ public class MediationActivity extends AppCompatActivity {
         TextView mentText=findViewById(R.id.mentText);
         mentText.setVisibility(View.INVISIBLE);
 
+        MediaPlayer m = MediaPlayer.create(this,R.raw.music1);
         mediation_img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 i=1-i;
-
-
                 if (i==0){
                     mediation_img.setImageResource(R.drawable.medi1);
                     mentText.setVisibility(View.INVISIBLE);
+                    play_btn.setVisibility(View.INVISIBLE);
                 // 명상이미지를 클릭했을때
                 }else{
                     mediation_img.setImageResource(R.drawable.dog2);
@@ -43,9 +44,26 @@ public class MediationActivity extends AppCompatActivity {
                     mentText.setVisibility(View.VISIBLE);
                     play_btn.setVisibility(View.VISIBLE);
 
+                    play_btn.bringToFront();
+                    play_btn.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            if(m.isPlaying()){
+                                //pause아이콘 필요
+                                play_btn.setImageResource(R.drawable.play_btn);
+                                m.pause();
+                            }else{
+                                m.seekTo(0);
+                                play_btn.setImageResource(R.drawable.play_btn);
+                                m.start();
+                            }
+                        }
+                    });
+
                 }
             }
         });
+
     }
 
 

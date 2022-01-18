@@ -150,13 +150,15 @@
             android:id="@+id/mon_cb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:buttonTint="#EA9342" />
 
         <CheckBox
             android:id="@+id/tue_cb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:buttonTint="#F4EAE2" />
 
         <CheckBox
             android:id="@+id/wed_cb"
