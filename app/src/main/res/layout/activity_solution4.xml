@@ -49,8 +49,8 @@
             android:layout_marginLeft="42dp"
             android:layout_marginTop="45dp"
             android:gravity="top"
-            android:text="변화 되짚기"/>
-           <!-- android:textAppearance="@style/some_id" />-->
+            android:text="변화 되짚기" />
+        <!-- android:textAppearance="@style/some_id" />-->
 
         <Button
             android:id="@+id/btnresult"

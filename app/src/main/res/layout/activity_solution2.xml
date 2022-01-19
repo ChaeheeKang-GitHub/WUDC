@@ -1,200 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Solution1">
+    android:orientation="vertical">
 
-    <!-- 솔루션 클릭 시 나타나는 솔루션 가이드_와이어프레임 -->
+    <!--<HorizontalScrollView
+        android:id="@+id/horScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >-->
 
-    <RelativeLayout
-        android:id="@+id/some_id"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@drawable/some_id"
-        android:clipToOutline="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_centerHorizontal="true">
 
-        <!-- 솔루션 몇 주차인지 -->
-        <!-- Rectangle 45 -->
-
-        <View
-            android:id="@+id/rectangle_"
-            android:layout_width="350.21dp"
-            android:layout_height="35dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="385dp"
-            android:background="@drawable/rectangle_4" />
-
-        <View
-            android:id="@+id/rectangle_2"
-            android:layout_width="350.21dp"
-            android:layout_height="35dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="433dp"
-            android:background="@drawable/rectangle_4" />
-
-        <View
-            android:id="@+id/rectangle_3"
-            android:layout_width="350.21dp"
-            android:layout_height="35dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="477dp"
-            android:background="@drawable/rectangle_4"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <View
-            android:id="@+id/rectangle_5"
-            android:layout_width="350.21dp"
-            android:layout_height="35dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="531dp"
-            android:background="@drawable/rectangle_4" />
-
-        <View
-            android:id="@+id/rectangle_4"
-            android:layout_width="130dp"
-            android:layout_height="51dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/rectangle_4" />
-
-
-        <!-- 솔루션 내용 -->
-        <!-- Rectangle 46 -->
-
-
-        <!-- 솔루션 완료 -->
-
-        <TextView
-            android:id="@+id/some_id1"
-            android:layout_width="127dp"
-            android:layout_height="22dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="23dp"
-            android:layout_marginTop="45dp"
-            android:gravity="top"
-            android:text="업무 외 시간 가지기"/>
-        <!-- android:textAppearance="@style/some_id" /> -->
-
-        <View
-            android:id="@+id/rectangle_4_2"
-            android:layout_width="350.21dp"
-            android:layout_height="240dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="19dp"
-            android:layout_marginTop="101dp"
-            android:background="@drawable/rectangle_4_2" />
-
-
-        <TextView
-            android:id="@+id/memo"
-            android:layout_width="340dp"
-            android:layout_height="230dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="28dp"
-            android:layout_marginTop="107dp"
-            android:background="@null"
-            android:gravity="top|start"
-            android:text="사회생활을 할 때에 나타나는 나도 모르는 내 모습에 놀라신 적 있으신가요? 스위스의 정신의학자인 칼 융은 사회와 내가 타협한 나의 모습을 페르소나라고 정의하였는데요 우리는 한 명의 사람이기 때문에 온전한 자아로 머물러야 심리적 안정감을 느낍니다 그러나 대부분 나와 페르소나 사이의 괴리가 느껴질 때, 번아웃이 오곤 해요! 그래서 번아웃을 수용하는 것은 굉장히 중요한 일이랍니다. 사회의 인정에 민감해하지 않고, 내가 원하는 진짜 내적 충만감을 알아내면 만성적 스트레스에서 탈출할 수 있어요! 사적 공간에서 보이는 나의 모습에 한 발자국 더 다가가 봅시다.이를 위해 천천히 실천할 수 있는 가벼운 것들을 준비해 봤어"
-            android:textColor="@color/black" />
-
-        <Button
-            android:id="@+id/btnmemo"
+        <ImageView
+            android:id="@+id/imageView"
             android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:layout_below="@+id/rectangle_4_2"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="40dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="248dp"
-            android:background="@drawable/rectangle_4_3"
-            android:text="솔루션 완료"
-            android:textSize="14sp" />
+            android:layout_height="600dp"
+            android:layout_centerHorizontal="true" />
 
-        <TextView
-            android:layout_width="291.79dp"
-            android:layout_height="28.69dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="355dp"
-            android:gravity="top"
-            android:text="나를 위한 '진짜' 여기"
-            android:textColor="@color/black" />
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="291.79dp"
-            android:layout_height="30dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="33dp"
-            android:layout_marginTop="392dp"
-            android:gravity="top"
-            android:text="좋아하는 티 따뜻하게 마셔 보기"
-            android:textColor="@color/black"
-            android:textSize="14sp" />
+    </ScrollView>
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="291.79dp"
-            android:layout_height="30dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="33dp"
-            android:layout_marginTop="435dp"
-            android:gravity="top"
-            android:text="심품에서 제공하는 명상 해 보기"
-            android:textColor="@color/black"
-            android:textSize="14sp" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:text="기록하기"
+        android:textColor="@color/gray"
+        android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="291.79dp"
-            android:layout_height="30dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="33dp"
-            android:layout_marginTop="483dp"
-            android:gravity="top"
-            android:text="떠오르는 감정 거침없이 자필로 적어 보기"
-            android:textColor="@color/black"
-            android:textSize="14sp" />
+</LinearLayout>
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="291.79dp"
-            android:layout_height="30dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="33dp"
-            android:layout_marginTop="539dp"
-            android:gravity="top"
-            android:text="‘그럼에도 불구하고 괜찮다’ 문장 4번 되뇌이기"
-            android:textColor="@color/black"
-            android:textSize="14sp" />
 
-    </RelativeLayout>
 
-    <!-- Rectangle 47 -->
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--</HorizontalScrollView>-->

@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // 버튼 만들어서 메인 넘어가도록 하기
+
         Button imageButton = (Button) findViewById(R.id.btn1);
         imageButton.setOnClickListener(new View.OnClickListener() {
 
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,Solution1.class);
+                Intent intent = new Intent(MainActivity.this,Solution2.class);
                 startActivity(intent);
             }
         });
