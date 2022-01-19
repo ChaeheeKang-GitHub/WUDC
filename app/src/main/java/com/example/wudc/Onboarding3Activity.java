@@ -1,26 +1,26 @@
 package com.example.wudc;
 
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class Onboarding3Activity extends AppCompatActivity {
 
-    TextView choice[] = new TextView[6];
-    Integer choId[] = { R.id.cho1, R.id.cho2, R.id.cho3, R.id.cho4, R.id.cho5, R.id.cho6 };
+    TextView choice[] = new TextView[16];
+    Integer choId[] = { R.id.cho1, R.id.cho2, R.id.cho3, R.id.cho4, R.id.cho5, R.id.cho6, R.id.cho7,R.id.cho8,R.id.cho9,R.id.cho10,
+            R.id.cho11, R.id.cho12, R.id.cho13, R.id.cho14, R.id.cho15, R.id.cho16 };
     Integer max = 0;
     ImageView btnNext;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_onboarding3);
 
         for(int i = 0; i < choId.length; i++){
             final int index;
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Onboarding2Activity.class);
+                Intent intent = new Intent(getApplicationContext(), Onboarding4Activity.class);
                 startActivity(intent);
             }
         });

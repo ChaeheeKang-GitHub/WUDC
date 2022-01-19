@@ -18,6 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Onboarding2Activity" />
+        <activity android:name=".Onboarding3Activity" />
+        <activity android:name=".Onboarding4Activity" />
+        <activity android:name=".Onboarding5Activity" />
     </application>
 
 </manifest>
