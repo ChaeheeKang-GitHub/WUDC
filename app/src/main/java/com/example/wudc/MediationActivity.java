@@ -1,70 +1,53 @@
 package com.example.wudc;
 
-import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
 
 public class MediationActivity extends AppCompatActivity {
-    int i=0;
+
+    private RecyclerView mRecyclerView;
+    private ArrayList<RecyclerViewItem> mList;  //버튼리스트
+    private RecyclerViewAdapter mRecyclerViewAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mediation);
 
-        ImageView mediation_img = findViewById(R.id.mediation_img);
-        mediation_img.setImageResource(R.drawable.medi1);
+        firstInit();
 
-        ImageView play_btn=findViewById(R.id.play_btn);
-        play_btn.setImageResource(R.drawable.play_btn);
-        play_btn.setVisibility(View.INVISIBLE);
+        for(int i=0;i<2;i++){
+            addItem(i);    //*여기로 버튼 이름 전달해서 버튼 별로 이미지 변경 필요
+        }
 
-        TextView mentText=findViewById(R.id.mentText);
-        mentText.setVisibility(View.INVISIBLE);
+        mRecyclerViewAdapter = new RecyclerViewAdapter(mList);
+        mRecyclerView.setAdapter(mRecyclerViewAdapter);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL,false));   //가로 리사이클
 
-        MediaPlayer m = MediaPlayer.create(this,R.raw.music1);
-        mediation_img.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                i=1-i;
-                if (i==0){
-                    mediation_img.setImageResource(R.drawable.medi1);
-                    mentText.setVisibility(View.INVISIBLE);
-                    play_btn.setVisibility(View.INVISIBLE);
-                // 명상이미지를 클릭했을때
-                }else{
-                    mediation_img.setImageResource(R.drawable.dog2);
-                    //관련 문구와 버튼이 보여진다
-                    mentText.setVisibility(View.VISIBLE);
-                    play_btn.setVisibility(View.VISIBLE);
-
-                    play_btn.bringToFront();
-                    play_btn.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            if(m.isPlaying()){
-                                //pause아이콘 필요
-                                play_btn.setImageResource(R.drawable.play_btn);
-                                m.pause();
-                            }else{
-                                m.seekTo(0);
-                                play_btn.setImageResource(R.drawable.play_btn);
-                                m.start();
-                            }
-                        }
-                    });
-
-                }
-            }
-        });
 
     }
 
+    public void firstInit() {
+        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        mList = new ArrayList<>();
+
+
+    }
+
+    public void addItem(int type) {
+        RecyclerViewItem item = new RecyclerViewItem();
+
+        item.setType(type);
+
+        mList.add(item);
+    }
 
 }

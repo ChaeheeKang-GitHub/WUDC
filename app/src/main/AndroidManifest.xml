@@ -9,8 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WUDC">
-        <activity android:name=".MediationActivity"/>
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -20,9 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Onboarding2Activity" />
-        <activity android:name=".Onboarding3Activity" />
-        <activity android:name=".Onboarding4Activity" />
-        <activity android:name=".Onboarding5Activity" />
+        <activity android:name=".MediationActivity"/>
     </application>
+
 </manifest>
