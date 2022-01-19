@@ -1,17 +1,17 @@
 package com.example.wudc;
 
 public class RecyclerViewItem {
-    private String mImgName;
-    private String mMainText;
-    private String mSubText;
+//    private String mImgName;
+//    private String mMainText;
+    private int mType;
 
-    public String getBtnName() {
-        return mImgName;
-    }
-
-    public void setBtnName(String imgName) {
-        this.mImgName = imgName;
-    }
+//    public String getBtnName() {
+//        return mImgName;
+//    }
+//
+//    public void setBtnName(String imgName) {
+//        this.mImgName = imgName;
+//    }
 
 //    public String getMainText() {
 //        return mMainText;
@@ -21,11 +21,11 @@ public class RecyclerViewItem {
 //        this.mMainText = mainText;
 //    }
 //
-//    public String getSubText() {
-//        return mSubText;
-//    }
-//
-//    public void setSubText(String subText) {
-//        this.mSubText = subText;
-//    }
+    public int getType() {
+        return mType;
+    }
+
+    public void setType(int type) {
+        this.mType = type;
+    }
 }

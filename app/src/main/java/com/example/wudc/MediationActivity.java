@@ -24,8 +24,8 @@ public class MediationActivity extends AppCompatActivity {
 
         firstInit();
 
-        for(int i=0;i<5;i++){
-            addItem("iconName");    //*여기로 버튼 이름 전달해서 버튼 별로 이미지 변경 필요
+        for(int i=0;i<2;i++){
+            addItem(i);    //*여기로 버튼 이름 전달해서 버튼 별로 이미지 변경 필요
         }
 
         mRecyclerViewAdapter = new RecyclerViewAdapter(mList);
@@ -42,10 +42,10 @@ public class MediationActivity extends AppCompatActivity {
 
     }
 
-    public void addItem(String btnName) {
+    public void addItem(int type) {
         RecyclerViewItem item = new RecyclerViewItem();
 
-        item.setBtnName(btnName);
+        item.setType(type);
 
         mList.add(item);
     }
