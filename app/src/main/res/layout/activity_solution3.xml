@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Solution1">
+
+    <!-- 솔루션 클릭 시 나타나는 솔루션 가이드_와이어프레임 -->
+
+    <RelativeLayout
+        android:id="@+id/some_id"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/some_id"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <!-- 솔루션 몇 주차인지 -->
+        <!-- Rectangle 45 -->
+
+        <View
+            android:id="@+id/rectangle_"
+            android:layout_width="350.21dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="385dp"
+            android:background="@drawable/rectangle_4" />
+
+        <View
+            android:id="@+id/rectangle_2"
+            android:layout_width="350.21dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="433dp"
+            android:background="@drawable/rectangle_4" />
+
+        <View
+            android:id="@+id/rectangle_3"
+            android:layout_width="350.21dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="477dp"
+            android:background="@drawable/rectangle_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/rectangle_5"
+            android:layout_width="350.21dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="531dp"
+            android:background="@drawable/rectangle_4" />
+
+        <View
+            android:id="@+id/rectangle_4"
+            android:layout_width="130dp"
+            android:layout_height="51dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rectangle_4" />
+
+
+        <!-- 솔루션 내용 -->
+        <!-- Rectangle 46 -->
+
+
+        <!-- 솔루션 완료 -->
+
+        <TextView
+            android:id="@+id/some_id1"
+            android:layout_width="127dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="45dp"
+            android:gravity="top"
+            android:text="그림자와 친해지기"/>
+            <!--android:textAppearance="@style/some_id" />-->
+
+        <View
+            android:id="@+id/rectangle_4_2"
+            android:layout_width="350.21dp"
+            android:layout_height="240dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="101dp"
+            android:background="@drawable/rectangle_4_2" />
+
+
+        <TextView
+            android:id="@+id/memo"
+            android:layout_width="340dp"
+            android:layout_height="260dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="106dp"
+            android:background="@null"
+            android:gravity="top|start"
+            android:text="그림자는 무의식의 정신 요소들 가운데 하나입니다. 보통 자아의 어두운 면은 담당하곤 하죠! 우리가 사회에 적응하고 대응할 때, 자아는 그림자를 이용해 도덕적 갈등이 따르는 불미한 활동을 수행합니다. 자아가 모르는 상태라도 그림자의 방어적이고 자신만 챙기는 활동들을 마치 국가 비밀 정보원처럼 하게 되는 거죠! 그렇지만 그림자를 가지고 있는 것이 무작정 나쁜 것은 아닙니다. 자기 수용을 통해 그림자와 자아가 통합하게 되면 더욱 성장할 수 있는 발판이 돼요 무의식의 의식화를 통한 개간 작업을 통해 통합적 자아형성즉, ‘자기실현(self-realization)’이 가능하며, 이를 통해 스스로가 스스로일 수 있는 개성화(individuation)가 가능해지면 있는 그대로의 내가 될 수 있어요!   우리 함께 도전해 볼까요?"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnmemo"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_below="@+id/rectangle_4_2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="248dp"
+            android:background="@drawable/rectangle_4_3"
+            android:text="솔루션 완료"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="291.79dp"
+            android:layout_height="28.69dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="355dp"
+            android:gravity="top"
+            android:text="자기 수용을 위한 첫걸음"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="291.79dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="392dp"
+            android:gravity="top"
+            android:text="자기 수용은 장기간에 이루어진다는 것 인지하기"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="291.79dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="435dp"
+            android:gravity="top"
+            android:text="현실을 인정하고 내 행동의 이유를 생각해 보기"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="291.79dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="483dp"
+            android:gravity="top"
+            android:text="인간은 불완전하다는 사실 받아들이기"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="291.79dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="539dp"
+            android:gravity="top"
+            android:text="함부로 나를 평가하지 말자고 다짐하기"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <!-- Rectangle 47 -->
+</androidx.constraintlayout.widget.ConstraintLayout>
