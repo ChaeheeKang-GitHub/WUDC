@@ -1,8 +1,11 @@
 package com.example.wudc;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,6 +22,10 @@ public class MediationActivity extends AppCompatActivity {
     private RecyclerViewAdapter mRecyclerViewAdapter;
 //    private Context mContext;
 
+    ImageView choice[] = new ImageView[7];
+    Integer choId[] = { R.id.mon_cb,R.id.tue_cb,R.id.wed_cb,R.id.thu_cb,R.id.fri_cb,R.id.sat_cb,R.id.sun_cb };
+    boolean week_option[]= {false,false,false,false,false,false,false};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +40,29 @@ public class MediationActivity extends AppCompatActivity {
         mRecyclerViewAdapter = new RecyclerViewAdapter(this, mList);
         mRecyclerView.setAdapter(mRecyclerViewAdapter);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL,false));   //가로 리사이클
+
+
+        //요일별 체크박스 구현
+
+        for(int i = 0; i < choId.length; i++){
+            final int index;
+            index = i;
+            choice[index] = (ImageView) findViewById(choId[index]);
+
+            choice[index].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(week_option[index]){    //항목이 선택되어있지않으면
+                        choice[index].setImageResource(R.drawable.unchecked);
+                        week_option[index]=false;
+
+                    } else {    //항목이 이미 선택되어있으면
+                        choice[index].setImageResource(R.drawable.checked);
+                        week_option[index]=true;
+                    }
+                }
+            });
+        }
 
 
     }
@@ -51,5 +81,6 @@ public class MediationActivity extends AppCompatActivity {
 
         mList.add(item);
     }
+
 
 }

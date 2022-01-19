@@ -146,10 +146,5 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/gotomedi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="명상하기로 이동(임시)" />
 
 </LinearLayout>

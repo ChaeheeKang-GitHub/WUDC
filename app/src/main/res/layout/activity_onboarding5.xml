@@ -125,9 +125,9 @@
         android:layout_height="37dp"
         android:text="설정 완료"
         android:textSize="14dp"
-        android:textColor="@color/green_700"
         android:fontFamily="@font/notosanskrbold"
-        android:background="@drawable/button_green200"
+        android:textColor="@color/white"
+        android:background="@drawable/button_green700"
         android:gravity="center"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"/>

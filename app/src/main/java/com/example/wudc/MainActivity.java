@@ -17,9 +17,6 @@ public class MainActivity extends AppCompatActivity {
     Integer max = 0;
     ImageView btnNext;
 
-    //임시
-    TextView gotomedi;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,14 +55,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //임시
-        gotomedi=(TextView)findViewById(R.id.gotomedi);
-        gotomedi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,MediationActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 }

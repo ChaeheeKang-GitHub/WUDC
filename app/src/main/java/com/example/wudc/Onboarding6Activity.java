@@ -37,8 +37,8 @@ public class Onboarding6Activity extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = new Intent(getApplicationContext(), Onboarding5Activity.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getApplicationContext(), MediationActivity.class);
+                startActivity(intent);
             }
         });
 
