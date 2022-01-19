@@ -4,40 +4,22 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ellin/AndroidStudioProjects/WUDC/app/src/main/res/layout/activity_main.xml" value="0.2907608695652174" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1484375" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/drawable-v24/rectangle_312.xml" value="0.15520833333333334" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/drawable/android_bro.xml" value="0.1" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/drawable/button_green700.xml" value="0.18541666666666667" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/drawable/choicebox.xml" value="0.16944444444444445" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/drawable/ellipsis_v_.xml" value="0.1" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/drawable/frame_6894.xml" value="0.1" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1484375" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/drawable/ic_round_up.xml" value="0.1" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/drawable/rectangle_2.xml" value="0.1" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/drawable/rectangle_3.xml" value="0.1" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/drawable/rectangle_4.xml" value="0.18541666666666667" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/drawable/rectangle_4_2.xml" value="0.18541666666666667" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/drawable/rectangle_4_3.xml" value="0.18541666666666667" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/drawable/rectangle_7.xml" value="0.1" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/drawable/rectangle_82.xml" value="0.15520833333333334" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/drawable/rectangle_9.xml" value="0.1" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/drawable/some_id.xml" value="0.14583333333333334" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/drawable/user_04c.xml" value="0.1" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/layout/activity_main.xml" value="0.13125" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/layout/activity_solution1.xml" value="0.1" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/layout/activity_solution2.xml" value="0.1662324127149557" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/layout/activity_solution3.xml" value="0.16614583333333333" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/layout/activity_solution4.xml" value="0.16614583333333333" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/layout/activity_solution_record.xml" value="0.16614583333333333" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/layout/frag_user_layout.xml" value="0.4" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/layout/rec_main.xml" value="0.1" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/layout/reclistview_list_item.xml" value="0.1" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/layout/record__main.xml" value="0.1" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/layout/sol_dialog.xml" value="0.264" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/layout/sol_main.xml" value="0.16822916666666668" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/layout/week_dialog.xml" value="0.1" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1648148148148148" />
-        <entry key="..\:/Users/user/Documents/WUDC/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1648148148148148" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/drawable/button_green200.xml" value="0.2361111111111111" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/drawable/button_green700.xml" value="0.2361111111111111" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/drawable/choicebox.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/drawable/longtextbox.xml" value="0.2361111111111111" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/drawable/square.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/font/font.xml" value="0.2838541666666667" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_choice2.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_mediation.xml" value="0.264" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_onboarding2.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_onboarding3.xml" value="0.22175925925925927" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_onboarding4.xml" value="0.22175925925925927" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_onboarding5.xml" value="0.264" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_onboarding6.xml" value="0.264" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_ondoarding5.xml" value="0.22175925925925927" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_solution_record.xml" value="0.264" />
       </map>
     </option>
   </component>
@@ -46,12 +28,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.264" />
-      </ProjectState>
-    </option>
   </component>
 </project>
