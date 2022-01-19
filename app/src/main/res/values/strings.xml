@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">WUDC</string>
+
+    <!-- strings.xml 솔루션몇주차인지-->
+    <string name="some_id">
+
+\u00EC\u0086\u0094\u00EB\u00A3\u00A8\u00EC\u0085\u0098 \u00EB\u00AA\u0087 \u00EC\u00A3\u00BC\u00EC\u00B0\u00A8\u00EC\u009D\u00B8\u00EC\u00A7\u0080
+</string>
+
+    <!-- strings.xml 솔루션내용-->
+    <string name="some_id2">
+
+\u00EC\u0086\u0094\u00EB\u00A3\u00A8\u00EC\u0085\u0098 \u00EB\u0082\u00B4\u00EC\u009A\u00A9
+</string>
+
+    <!-- strings.xml 솔루션 완료-->
+    <string name="some_id3">
+
+\u00EC\u0086\u0094\u00EB\u00A3\u00A8\u00EC\u0085\u0098 \u00EC\u0099\u0084\u00EB\u00A3\u008C
+</string>
+
+
 </resources>
