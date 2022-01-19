@@ -1,8 +1,5 @@
 package com.example.wudc;
 
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -10,17 +7,23 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
-    TextView choice[] = new TextView[6];
-    Integer choId[] = { R.id.cho1, R.id.cho2, R.id.cho3, R.id.cho4, R.id.cho5, R.id.cho6 };
+public class Onboarding2Activity extends AppCompatActivity {
+
+    TextView choice[] = new TextView[34];
+    Integer choId[] = { R.id.cho1, R.id.cho2, R.id.cho3, R.id.cho4, R.id.cho5, R.id.cho6, R.id.cho7,R.id.cho8,R.id.cho9,R.id.cho10,
+            R.id.cho11, R.id.cho12, R.id.cho13, R.id.cho14, R.id.cho15, R.id.cho16, R.id.cho17, R.id.cho18, R.id.cho19, R.id.cho20,
+            R.id.cho21, R.id.cho22, R.id.cho23, R.id.cho24, R.id.cho25, R.id.cho26, R.id.cho27, R.id.cho28, R.id.cho29, R.id.cho30,
+            R.id.cho31, R.id.cho32, R.id.cho33, R.id.cho34 };
     Integer max = 0;
     ImageView btnNext;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_onboarding2);
 
         for(int i = 0; i < choId.length; i++){
             final int index;
@@ -31,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     if(!choice[index].isSelected()){    //항목이 선택되어있지않으면
-                        if(max < 2){    //2개보다 적게 선택되어있으면
+                        if(max < 5){    //5개보다 적게 선택되어있으면
                             max++;
                             choice[index].setSelected(!choice[index].isSelected());
                             choice[index].setTextColor(Color.parseColor("#FFFFFF"));
@@ -50,9 +53,10 @@ public class MainActivity extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Onboarding2Activity.class);
+                Intent intent = new Intent(getApplicationContext(), Onboarding3Activity.class);
                 startActivity(intent);
             }
         });
+
     }
 }
