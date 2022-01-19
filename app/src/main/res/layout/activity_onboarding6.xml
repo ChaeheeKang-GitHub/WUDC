@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Onboarding6Activity"
+    android:background="@color/orange_200">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/onboarding_background"
+        android:paddingVertical="30dp"
+        android:paddingHorizontal="55dp" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/onboarding_congrats"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"/>
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="92dp"
+        android:layout_height="89dp"
+        android:src="@drawable/profile_img_default"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="님!\n테스트 결과가 나왔어요🎉"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/notosanskrbold"
+        android:layout_marginTop="41dp"
+        android:layout_marginBottom="3dp"/>
+
+    <TextView
+        android:layout_width="267dp"
+        android:layout_height="43dp"
+        android:text="자신의 의견이 받아들여지지 않으면 충격받아요"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/notosanskrregular"
+        android:background="@drawable/longtextbox"
+        android:gravity="center"
+        android:layout_marginTop="13dp"/>
+
+    <TextView
+        android:layout_width="267dp"
+        android:layout_height="43dp"
+        android:text="스트레스 상황에서 자신을 고립시킬 때가 많아요"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/notosanskrregular"
+        android:background="@drawable/longtextbox"
+        android:gravity="center"
+        android:layout_marginTop="13dp"/>
+
+    <TextView
+        android:layout_width="267dp"
+        android:layout_height="43dp"
+        android:text="감정을 다루는 것이 타인보다 서툴러요"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/notosanskrregular"
+        android:background="@drawable/longtextbox"
+        android:gravity="center"
+        android:layout_marginTop="13dp"/>
+
+    <TextView
+        android:layout_width="267dp"
+        android:layout_height="43dp"
+        android:text="정직함과 솔직함을 가장 중요하게 여겨요"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/notosanskrregular"
+        android:background="@drawable/longtextbox"
+        android:gravity="center"
+        android:layout_marginTop="13dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이런 솔루션을 추천해요!"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/notosanskrbold"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="20dp"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/onboarding_solution1"
+            android:layout_marginRight="11dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/onboarding_solution2" />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnNext"
+            android:layout_width="139dp"
+            android:layout_height="41dp"
+            android:text="심품 시작하기"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/notosanskrbold"
+            android:background="@drawable/button_green700"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="49dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ellin/AndroidStudioProjects/WUDC/app/src/main/res/layout/activity_main.xml" value="0.2907608695652174" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/drawable/button_green200.xml" value="0.2361111111111111" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/drawable/button_green700.xml" value="0.2361111111111111" />
         <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/drawable/choicebox.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/drawable/longtextbox.xml" value="0.2361111111111111" />
         <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/drawable/square.xml" value="0.26979166666666665" />
         <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/font/font.xml" value="0.2838541666666667" />
         <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_choice2.xml" value="0.25364583333333335" />
@@ -12,6 +15,8 @@
         <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_onboarding2.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_onboarding3.xml" value="0.22175925925925927" />
         <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_onboarding4.xml" value="0.22175925925925927" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_onboarding5.xml" value="0.264" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_onboarding6.xml" value="0.264" />
         <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_ondoarding5.xml" value="0.22175925925925927" />
       </map>
     </option>
