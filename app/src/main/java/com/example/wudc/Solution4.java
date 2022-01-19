@@ -14,8 +14,9 @@ public class Solution4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_solution4);
 
-        Button btnmemo = (Button) findViewById(R.id.btnmemo);
-        btnmemo.setOnClickListener(new View.OnClickListener(){
+
+        Button btnresult = (Button) findViewById(R.id.btnresult);
+        btnresult.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(getApplicationContext(), SolutionRecord.class);
