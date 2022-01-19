@@ -4,28 +4,26 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ellin/AndroidStudioProjects/WUDC/app/src/main/res/layout/activity_main.xml" value="0.2907608695652174" />
-        <entry key="..\:/Users/wlssk/AndroidStudioProjects/wudc4/app/src/main/res/drawable/ic_launcher_background.xml" value="0.19907407407407407" />
-        <entry key="..\:/Users/wlssk/AndroidStudioProjects/wudc4/app/src/main/res/drawable/rectangle_4.xml" value="0.14166666666666666" />
-        <entry key="..\:/Users/wlssk/AndroidStudioProjects/wudc4/app/src/main/res/drawable/rectangle_4_1.xml" value="0.17962962962962964" />
-        <entry key="..\:/Users/wlssk/AndroidStudioProjects/wudc4/app/src/main/res/drawable/rectangle_4_2.xml" value="0.2064814814814815" />
-        <entry key="..\:/Users/wlssk/AndroidStudioProjects/wudc4/app/src/main/res/drawable/rectangle_4_3.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/wlssk/AndroidStudioProjects/wudc4/app/src/main/res/drawable/some_id.xml" value="0.14166666666666666" />
-        <entry key="..\:/Users/wlssk/AndroidStudioProjects/wudc4/app/src/main/res/font/font.xml" value="0.2351851851851852" />
-        <entry key="..\:/Users/wlssk/AndroidStudioProjects/wudc4/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/wlssk/AndroidStudioProjects/wudc4/app/src/main/res/layout/activity_main2.xml" value="0.21" />
-        <entry key="..\:/Users/wlssk/AndroidStudioProjects/wudc4/app/src/main/res/layout/activity_solution1.xml" value="0.25" />
-        <entry key="..\:/Users/wlssk/AndroidStudioProjects/wudc4/app/src/main/res/layout/activity_solution2.xml" value="0.33" />
-        <entry key="..\:/Users/wlssk/AndroidStudioProjects/wudc4/app/src/main/res/layout/activity_solution3.xml" value="0.33" />
-        <entry key="..\:/Users/wlssk/AndroidStudioProjects/wudc4/app/src/main/res/layout/activity_solution4.xml" value="0.25" />
-        <entry key="..\:/Users/wlssk/AndroidStudioProjects/wudc4/app/src/main/res/layout/activity_solution_guide.xml" value="0.33" />
-        <entry key="..\:/Users/wlssk/AndroidStudioProjects/wudc4/app/src/main/res/layout/activity_solution_memo.xml" value="0.33" />
-        <entry key="..\:/Users/wlssk/AndroidStudioProjects/wudc4/app/src/main/res/layout/activity_solution_memo2.xml" value="0.2477355072463768" />
-        <entry key="..\:/Users/wlssk/AndroidStudioProjects/wudc4/app/src/main/res/layout/activity_solution_record.xml" value="0.33" />
-        <entry key="..\:/Users/wlssk/AndroidStudioProjects/wudc4/app/src/main/res/layout/activity_solution_select.xml" value="0.33" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/drawable/button_green200.xml" value="0.2361111111111111" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/drawable/button_green700.xml" value="0.2361111111111111" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/drawable/choicebox.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/drawable/longtextbox.xml" value="0.2361111111111111" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/drawable/square.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/font/font.xml" value="0.2838541666666667" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_choice2.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_mediation.xml" value="0.264" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_onboarding2.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_onboarding3.xml" value="0.22175925925925927" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_onboarding4.xml" value="0.22175925925925927" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_onboarding5.xml" value="0.264" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_onboarding6.xml" value="0.264" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_ondoarding5.xml" value="0.22175925925925927" />
+        <entry key="..\:/Users/leeyeonghyeon/Desktop/wudc/app/src/main/res/layout/activity_solution_record.xml" value="0.264" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

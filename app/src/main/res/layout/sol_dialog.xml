@@ -25,14 +25,16 @@
             android:layout_height="wrap_content"
             android:text="변경한 솔루션을 선택하세요"
             android:textColor="#88889D"
-            android:textSize="7sp" />
+            android:textSize="7sp"
+            android:layout_marginTop="10dp"/>
             <!--android:textAppearance="@style/some_id"/>-->
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
+            android:orientation="vertical"
+            android:layout_marginTop="19dp">
+<!--
             <Button
                 android:id="@+id/btn_ac"
                 android:layout_width="102dp"
@@ -50,14 +52,52 @@
                 android:layout_width="102dp"
                 android:layout_height="21dp"
                 android:text="자아 탄력성 높이기" />
+-->
+            <TextView
+            android:id="@+id/btn_ac"
+            android:layout_width="92dp"
+            android:layout_height="21dp"
+            android:text="번아웃 수용하기"
+            android:textSize="8dp"
+            android:textColor="@color/black"
+            android:background="@drawable/choicebox"
+            android:gravity="center"
+            />
 
+            <TextView
+                android:id="@+id/btn_se"
+                android:layout_width="92dp"
+                android:layout_height="21dp"
+                android:text="핵심 감정 파악하기"
+                android:textSize="8dp"
+                android:textColor="@color/black"
+                android:background="@drawable/choicebox"
+                android:gravity="center"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/btn_up"
+                android:layout_width="92dp"
+                android:layout_height="21dp"
+                android:text="자아 탄력성 높이기"
+                android:textSize="8dp"
+                android:textColor="@color/black"
+                android:background="@drawable/choicebox"
+                android:gravity="center"
+                android:layout_marginTop="8dp"/>
         </LinearLayout>
 
-        <ImageButton
+        <TextView
             android:id="@+id/btnSample"
-            android:layout_width="33.39dp"
-            android:layout_height="19.84dp"
-            android:background="@drawable/group_481" />
+            android:layout_width="34dp"
+            android:layout_height="21dp"
+            android:text="완료"
+            android:textSize="8dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_green700"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="22dp"/>
     </LinearLayout>
 
 </LinearLayout>

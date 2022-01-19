@@ -12,20 +12,237 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-                <fragment
-                    android:id="@+id/frag_user"
-                    android:name="com.example.wudc.FragUserFragment"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:layout="@layout/frag_user_layout" />
+                    android:orientation="horizontal">
 
-                <ListView
-                    android:id="@+id/listview"
-                    android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            tools:layout_weight="0.5">
+
+                                <TextView
+                                    android:id="@+id/name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/notosanskrbold"
+                                    android:text="유저이름"
+                                    android:textColor="@color/black"
+                                    android:textSize="22dp" />
+
+                                <TextView
+                                    android:id="@+id/sol_day"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/notosanskrregular"
+                                    android:text="솔루션 n일차"
+                                    android:textSize="12dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0"
+                                    android:orientation="horizontal">
+                                        <!--
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src = "@drawable/rectangle_31"
+                                        />-->
+                                        <androidx.appcompat.widget.AppCompatButton
+                                            android:id="@+id/btn_weekChange"
+                                            android:layout_width="89dp"
+                                            android:layout_height="33dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/rectangle_3"
+                                            android:text="주기 변경"
+                                            android:textColor="@color/green_700" />
+                                        <!--android:textAppearance="@style/some_id" />-->
+
+                                        <androidx.appcompat.widget.AppCompatButton
+                                            android:id="@+id/btn_solChange"
+                                            android:layout_width="89dp"
+                                            android:layout_height="33dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/rectangle_3"
+                                            android:text="솔루션 변경"
+                                            android:textColor="@color/green_700" />
+                                        <!--android:textAppearance="@style/some_id" />-->
+
+
+                                </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/image_user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            app:srcCompat="@drawable/user_04c" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/rectangle_2"
-                    />
-        </LinearLayout>
+                    android:orientation="vertical">
 
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/textView7"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="솔루션" />
+
+                                        <TextView
+                                            android:id="@+id/step1Text"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:text="1단계" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/step1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="40dp"
+                                    android:layout_gravity="center"
+                                    tools:srcCompat="@drawable/step1" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="60dp"
+                            >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/textView8"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="솔루션" />
+
+                                        <TextView
+                                            android:id="@+id/step2Text"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:text="2단계" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/step2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="40dp"
+                                    android:layout_gravity="center"
+                                    tools:srcCompat="@drawable/step2" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="60dp"
+                            >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/textView9"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="솔루션" />
+
+                                        <TextView
+                                            android:id="@+id/step3Text"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:text="3단계" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/step3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="40dp"
+                                    android:layout_gravity="center"
+                                    tools:srcCompat="@drawable/step3" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="60dp"
+                            >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/textView10"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="솔루션" />
+
+                                        <TextView
+                                            android:id="@+id/step4Text"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:text="2단계" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/step4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="40dp"
+                                    android:layout_gravity="center"
+                                    tools:srcCompat="@drawable/step4" />
+
+                        </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Onboarding2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/orange_200"
+        android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자신의 성격을 \n마구마구 선택해 주세요!"
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/notosanskrbold"
+        android:layout_marginTop="31dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="최대 5개까지 선택할 수 있어요"
+        android:textSize="14dp"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/notosanskrregular"
+        android:layout_marginTop="15dp" />
+
+    <LinearLayout
+        android:layout_width="335dp"
+        android:layout_height="582dp"
+        android:background="@drawable/square"
+        android:layout_marginTop="22dp"
+        android:paddingVertical="25dp"
+        android:paddingHorizontal="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cho1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="친절한"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cho2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="느긋한"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cho3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자신감 있는"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/cho4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="재능 있는"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cho5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="외향적인"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cho6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="차분한"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/cho7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="솔직한"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cho8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="배려하는"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cho9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="유쾌한"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/cho10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="독립적인"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cho11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="겸손한"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cho12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="독창적인"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/cho13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="활동적인"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cho14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내향적인"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cho15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="친근한"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/cho16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="영리한"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cho17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="초조한"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cho18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="믿음직한"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/cho19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수줍어하는"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cho20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="까다로운"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cho21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="똑똑한"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/cho22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="의지할만한"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cho23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="용기있는"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cho24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="박식한"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/cho25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="조직화된"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cho26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="철저한"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cho27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주의깊은"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/cho28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="동정심 있는"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cho29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="민감한"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cho30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이상적인"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/cho31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자발적인"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cho32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공격적인"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/cho33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="단정한"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/cho34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자의식 있는"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/notosanskrregular"
+                android:background="@drawable/choicebox"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <ImageView
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/next"
+                android:layout_marginLeft="145dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
