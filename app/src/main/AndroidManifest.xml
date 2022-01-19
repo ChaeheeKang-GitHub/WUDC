@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WUDC">
         <activity
+            android:name=".Solution3"
+            android:exported="false" />
+        <activity
+            android:name=".Solution2"
+            android:exported="false" />
+        <activity
+            android:name=".Solution4"
+            android:exported="false" />
+        <activity
+            android:name=".SolutionRecord"
+            android:exported="false" />
+        <activity
+            android:name=".Solution1"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
