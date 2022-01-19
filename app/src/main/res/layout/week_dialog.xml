@@ -65,7 +65,7 @@
                 android:text="3일"
                 android:textSize="13dp"
                 android:textColor="@color/black"
-                android:background="@drawable/rectangle_82"
+                android:background="@drawable/choicebox"
                 android:gravity="center"
                 android:layout_marginRight="15dp"/>
 
@@ -76,7 +76,7 @@
                 android:text="7일"
                 android:textSize="13dp"
                 android:textColor="@color/black"
-                android:background="@drawable/rectangle_82"
+                android:background="@drawable/choicebox"
                 android:gravity="center"
                 android:layout_marginRight="15dp"/>
 
