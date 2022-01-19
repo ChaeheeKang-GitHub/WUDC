@@ -27,9 +27,9 @@ public class SolutionRecord extends AppCompatActivity implements View.OnClickLis
                         .setMessage("저장되었습니다.")
                         .setNeutralButton("확인", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dlg, int sumthin) {
-                            }
-
-                            ;
+                                Intent intent = new Intent(getApplicationContext(), RecListViewActivity.class);
+                                startActivity(intent);
+                            };
                         })
                         .show(); // 팝업창 보여줌
                 break;
@@ -76,7 +76,6 @@ public class SolutionRecord extends AppCompatActivity implements View.OnClickLis
             nav_record.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-//                    //기록하기 액티비티와 연결해주세요
                     Intent intent = new Intent(getApplicationContext(), RecListViewActivity.class);
                     startActivity(intent);
                 }
