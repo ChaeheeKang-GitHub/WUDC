@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height=""
+
+    <TextView
+        android:id="@+id/some_id"
+        android:layout_width="99dp"
+        android:layout_height="14dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="108dp"
+        android:text="@string/some_id"
+        android:textAppearance="@style/some_id"
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="61dp"
+        android:text="@string/title"
+        android:textAppearance="@style/title"
+        android:fontFeatureSettings="tnum, lnum"
+        android:lineSpacingExtra="8sp"
+        android:translationY="-4.02sp"
+        android:gravity="top"
+        />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/user_04c"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:clipToOutline="true"
+        android:background="@drawable/user_04c"
+        />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frame_6894"
+        android:layout_width="375dp"
+        android:layout_height="490dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="205dp"
+        android:background="@drawable/frame_6894"
+        />
+
+    <View
+        android:id="@+id/rectangle_7"
+        android:layout_width="2dp"
+        android:layout_height="443dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="88dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="226dp"
+        android:background="@drawable/rectangle_7"
+        />
+
+    <View
+        android:id="@+id/rectangle_9"
+        android:layout_width="245dp"
+        android:layout_height="92dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="109dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="230dp"
+        android:background="@drawable/rectangle_9"
+        />
+
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="245dp"
+        android:layout_height="92dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="109dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="342dp"
+        android:background="@drawable/rectangle_2"
+        />
+    <View
+        android:id="@+id/rectangle_3"
+        android:layout_width="245dp"
+        android:layout_height="92dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="109dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="574dp"
+        android:background="@drawable/rectangle_3"
+        />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ellipsis_v_"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="319dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="361dp"
+        android:clipToOutline="true"
+        android:background="@drawable/ellipsis_v_"
+        />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ellipsis_v_"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="319dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="477dp"
+        android:clipToOutline="true"
+        android:background="@drawable/ellipsis_v_"
+        />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ellipsis_v_"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="319dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="593dp"
+        android:clipToOutline="true"
+        android:background="@drawable/ellipsis_v_"
+        />
+    <TextView
+        android:id="@+id/some_id"
+        android:layout_width="127dp"
+        android:layout_height="22dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="128dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="361dp"
+        android:text="@string/some_id"
+        android:textAppearance="@style/some_id"
+        android:gravity="top"
+        />
+
+    <TextView
+        android:id="@+id/some_id"
+        android:layout_width="127dp"
+        android:layout_height="22dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="128dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="477dp"
+        android:text="@string/some_id"
+        android:textAppearance="@style/some_id"
+        android:gravity="top"
+        />
+
+    <TextView
+        android:id="@+id/some_id"
+        android:layout_width="156dp"
+        android:layout_height="22dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="128dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="593dp"
+        android:text="@string/some_id"
+        android:textAppearance="@style/some_id"
+        android:gravity="top"
+        />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/android_bro"
+        android:layout_width="366dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="6dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-13dp"
+        android:clipToOutline="true"
+        android:background="@drawable/android_bro"
+        />
+
+    <View
+        android:id="@+id/group_6893"
+        android:layout_width="182dp"
+        android:layout_height="33dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="136dp"
+        android:background="#00000000"
+        />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ic_round_up"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="106dp"
+        android:background="@drawable/ic_round_up"
+        />
+
+    <TextView
+        android:id="@+id/day_1"
+        android:layout_width="49dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="19dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="252dp"
+        android:text="@string/day_1"
+        android:textAppearance="@style/day_1"
+        android:gravity="top"
+        />
+
+    <TextView
+        android:id="@+id/day_2"
+        android:layout_width="49dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="19dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="362dp"
+        android:text="@string/day_2"
+        android:textAppearance="@style/day_2"
+        android:gravity="top"
+        />
+
+    <TextView
+        android:id="@+id/day_3"
+        android:layout_width="49dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="19dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="478dp"
+        android:text="@string/day_3"
+        android:textAppearance="@style/day_3"
+        android:gravity="top"
+        />
+
+    <TextView
+        android:id="@+id/day_4"
+        android:layout_width="49dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="19dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="594dp"
+        android:text="@string/day_4"
+        android:textAppearance="@style/day_4"
+        android:gravity="top"
+        />
+    <TextView
+        android:id="@+id/some_id"
+        android:layout_width="34dp"
+        android:layout_height="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="232dp"
+        android:text="@string/some_id"
+        android:textAppearance="@style/some_id"
+        android:gravity="right|top"
+        />
+
+    <TextView
+        android:id="@+id/some_id"
+        android:layout_width="34dp"
+        android:layout_height="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="342dp"
+        android:text="@string/some_id"
+        android:textAppearance="@style/some_id"
+        android:gravity="right|top"
+        />
+
+    <TextView
+        android:id="@+id/some_id"
+        android:layout_width="34dp"
+        android:layout_height="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="458dp"
+        android:text="@string/some_id"
+        android:textAppearance="@style/some_id"
+        android:gravity="right|top"
+        />
+
+    <TextView
+        android:id="@+id/some_id"
+        android:layout_width="34dp"
+        android:layout_height="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="574dp"
+        android:text="@string/some_id"
+        android:textAppearance="@style/some_id"
+        android:gravity="right|top"
+        />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ellipsis_v_"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="319dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="245dp"
+        android:clipToOutline="true"
+        android:background="@drawable/ellipsis_v_"
+        />
+
+    <TextView
+        android:id="@+id/some_id"
+        android:layout_width="156dp"
+        android:layout_height="22dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="128dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="245dp"
+        android:text="@string/some_id"
+        android:textAppearance="@style/some_id"
+        android:gravity="top"
+        />
+
+    <TextView
+        android:id="@+id/asdfasdfasd"
+        android:layout_width="96dp"
+        android:layout_height="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="128dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="276dp"
+        android:text="@string/asdfasdfasd"
+        android:textAppearance="@style/asdfasdfasd"
+        android:gravity="top"
+        />
+
+    <View
+        android:id="@+id/tabbar"
+        android:layout_width="375dp"
+        android:layout_height="57.42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="708dp"
+        android:background="#00000000"
+        />
+
+
+
+-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
