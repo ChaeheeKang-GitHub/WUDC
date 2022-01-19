@@ -1,6 +1,7 @@
 package com.example.wudc;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.media.Image;
 import android.os.Bundle;
@@ -26,6 +27,8 @@ public class MediationActivity extends AppCompatActivity {
     Integer choId[] = { R.id.mon_cb,R.id.tue_cb,R.id.wed_cb,R.id.thu_cb,R.id.fri_cb,R.id.sat_cb,R.id.sun_cb };
     boolean week_option[]= {false,false,false,false,false,false,false};
 
+    ImageView nav_mediation, nav_record, nav_closer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +46,6 @@ public class MediationActivity extends AppCompatActivity {
 
 
         //요일별 체크박스 구현
-
         for(int i = 0; i < choId.length; i++){
             final int index;
             index = i;
@@ -62,8 +64,33 @@ public class MediationActivity extends AppCompatActivity {
                     }
                 }
             });
-        }
 
+            //하단 네비게이션
+            nav_mediation = (ImageView) findViewById(R.id.nav_mediation);
+            nav_record = (ImageView) findViewById(R.id.nav_record);
+            nav_closer = (ImageView) findViewById(R.id.nav_closer) ;
+
+            nav_mediation.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(getApplicationContext(), MediationActivity.class);
+                    startActivity(intent);
+                }
+            });
+            nav_record.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+//                    //기록하기 액티비티와 연결해주세요
+//                    Intent intent = new Intent(getApplicationContext(), MediationActivity.class);
+//                    startActivity(intent);
+                }
+            });
+            nav_closer.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                }
+            });
+        }
 
     }
 
