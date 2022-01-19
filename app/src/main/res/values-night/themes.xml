@@ -13,4 +13,92 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="title">
+
+        <item name="android:textSize">
+            22sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.02
+        </item>
+
+        <item name="android:textColor">
+            #191D30
+        </item>
+
+    </style>
+
+    <style name="some_id">
+
+        <item name="android:textSize">
+            12sp
+        </item>
+
+        <item name="android:textColor">
+            #88889D
+        </item>
+
+    </style>
+
+    <style name="day_1">
+
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:textColor">
+            #191D30
+        </item>
+
+    </style>
+    <style name="day_2">
+
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:textColor">
+            #191D30
+        </item>
+
+    </style>
+    <style name="day_3">
+
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:textColor">
+            #191D30
+        </item>
+
+    </style>
+    <style name="day_4">
+
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:textColor">
+            #191D30
+        </item>
+
+    </style>
+
+
+    <style name="asdfasdfasd">
+
+        <item name="android:textSize">
+            12sp
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+
+    </style>
+
+
 </resources>
