@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -48,7 +49,9 @@ public class RecListViewActivity extends AppCompatActivity {
 
         //리스트뷰에 Adapter 설정
         listview.setAdapter(listAdapter);
+
     }
+
     /* 리스트뷰 어댑터 */
     public class ListViewAdapter extends BaseAdapter {
         ArrayList<RecItem> items = new ArrayList<>();
@@ -78,6 +81,7 @@ public class RecListViewActivity extends AppCompatActivity {
             final Context context = viewGroup.getContext();
             final RecItem recItem = items.get(position);
 
+
             if(convertView == null) {
                 LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 convertView = inflater.inflate(R.layout.reclistview_list_item, viewGroup, false);
@@ -96,19 +100,59 @@ public class RecListViewActivity extends AppCompatActivity {
             tv_des.setText(recItem.getDes());
             Log.d(TAG, "getView() - [ "+position+" ] "+recItem.getName());
 
+
+
             //각 아이템 선택 event
+
             convertView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Toast.makeText(context, "단계 : "+recItem.getNum()+" "+" 솔루션 : "+recItem.getName()+" "+" 내용 : "+recItem.getDes(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "position : "+position+"단계 : "+recItem.getNum()+" "+" 솔루션 : "+recItem.getName()+" "+" 내용 : "+recItem.getDes(), Toast.LENGTH_SHORT).show();
                     // 페이지 넘어가기
-                    Intent intent = new Intent(RecListViewActivity.this,Solution1.class);
-                    startActivity(intent);
+
+                    //int num  = Integer.parseInt(position);
+
+                    switch (position)
+                    {
+                        case 0: // 명상하기
+                            Intent intent0 = new Intent(RecListViewActivity.this,Solution1.class);
+                            startActivity(intent0);
+                            break;
+
+                        case 1: // 업무 외 시간 가지기
+                            Intent intent1 = new Intent(RecListViewActivity.this,Solution2.class);
+                            startActivity(intent1);
+                            break;
+
+                        case 2: // 그림자와 친해지기
+                            Intent intent2 = new Intent(RecListViewActivity.this,Solution3.class);
+                            startActivity(intent2);
+                            break;
+
+                        case 3: // 변화 되짚기
+                            Intent intent3 = new Intent(RecListViewActivity.this,Solution4.class);
+                            startActivity(intent3);
+                            break;
+
+                        default:
+                            break;
+
+
+                    }
 
                 }
+
+
+/*
+                Intent intent = new Intent(RecListViewActivity.this,SolMainActivity.class);
+                    intent.putExtra("position",position);
+                    startActivity(intent);
+
+                }*/
             });
 
-            
+
+            //Intent intent = getIntent();
 
             return convertView;  //뷰 객체 반환
         }

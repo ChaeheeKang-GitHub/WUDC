@@ -61,6 +61,8 @@ public class FragUserFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Toast.makeText(mContext, " 솔루션변경 ", Toast.LENGTH_SHORT).show();
+                FragSolDialogFragment f = FragSolDialogFragment.getInstance();
+                f.show(getChildFragmentManager(), FragSolDialogFragment.TAG_EVENT_DIALOG);
                }
         });
 
