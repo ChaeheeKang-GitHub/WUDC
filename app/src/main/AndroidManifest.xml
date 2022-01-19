@@ -31,6 +31,8 @@
         <activity android:name=".Onboarding4Activity" />
         <activity android:name=".Onboarding5Activity" />
         <activity android:name=".Onboarding6Activity" />
+
+        <activity android:name=".CloserActivity" />
     </application>
 
 </manifest>
