@@ -23,7 +23,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageButton mediBtn;
         ImageView playBtn;
-        TextView mentText;
+        //TextView mentText;
         MediaPlayer m;
         int i = 0;
 
@@ -33,8 +33,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
             mediBtn = (ImageButton) itemView.findViewById(R.id.mediBtn);
             playBtn=(ImageView) itemView.findViewById(R.id.playBtn);
-            mentText=(TextView) itemView.findViewById(R.id.mediText);
-//            MediaPlayer m1 = MediaPlayer.create(itemView.getContext(), R.raw.music1);
+           // mentText=(TextView) itemView.findViewById(R.id.mediText);
+            MediaPlayer m1 = MediaPlayer.create(itemView.getContext(), R.raw.music1);
 
             mediBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -45,7 +45,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
 
                     if (i==0){
-                        mentText.setVisibility(View.INVISIBLE);
+                        //mentText.setVisibility(View.INVISIBLE);
                         playBtn.setVisibility(View.INVISIBLE);
 
                         if(item.getType() == 0) {
@@ -57,9 +57,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                         }
 
                     }else{   // 명상이미지를 클릭했을때
-                        mediBtn.setImageResource(R.drawable.box);
+                        mediBtn.setImageResource(R.drawable.medi_btn1_blackground);
                         //관련 문구와 버튼이 보여진다
-                        mentText.setVisibility(View.VISIBLE);
+                        //mentText.setVisibility(View.VISIBLE);
                         playBtn.setVisibility(View.VISIBLE);
 
                     }
@@ -70,27 +70,26 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             playBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    i = 1 - i;
+                    //i = 1 - i;
 
                     RecyclerViewItem item = mList.get(pos);
 
-
+/*
                     if(item.getType() == 0) {
                         m = MediaPlayer.create(mContext, R.raw.music1);
                     }
                     else {
                         m = MediaPlayer.create(mContext, R.raw.music2);
-
                     }
-
-                    if(m.isPlaying()){
+*/
+                    if(m1.isPlaying()){
                         //pause아이콘 필요
                         playBtn.setImageResource(R.drawable.pause_btn);
-                        m.pause();
+                        m1.pause();
                     }else{
-                        m.seekTo(0);
+                        m1.seekTo(0);
                         playBtn.setImageResource(R.drawable.play_btn);
-                        m.start();
+                        m1.start();
                     }
 
                 }
@@ -127,16 +126,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         if(item.getType() == 0) {
             holder.mediBtn.setImageResource(R.drawable.medi_btn1);
-            holder.mentText.setText("자신의 부족함을 마음 깊숙한 곳에서\n" +
-                    "꺼내 보고 인정해 보는 시간을 가져 보아요\n" +
-                    "관찰을 통해 자신의 행동을\n" +"객관화하는 것에 도움을 줍니다\n");
+
 
         }
         else {
             holder.mediBtn.setImageResource(R.drawable.medi_btn2);
-            holder.mentText.setText("최근 있었던 일과 감정들을 떠올리고\n"+ "반성해 보세요. 정서가 다양할수록\n" +
-                    "폭 넓은 인지 기능을 가지며,\n"+"자아 통제에 큰 역할을 해요\n" +
-                    "또한, 지금껏 이해할 수 없었던\n"+" 빈틈을 메울 수 있도록 도움을 줍니다.");
 
         }
 
