@@ -22,8 +22,8 @@ import java.util.ArrayList;
 
 public class RecListViewActivity extends AppCompatActivity {
 
-    Button btnweek;
-    Button btnsol;
+    TextView btnweek;
+    TextView btnsol;
     ImageView nav_mediation, nav_record, nav_closer;
 
     final String TAG = RecListViewActivity.class.getSimpleName();
@@ -36,23 +36,24 @@ public class RecListViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.rec_main);
 
-//        btnweek = findViewById(R.id.btn_weekChange);
-//        btnweek.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                FragWeekDialogFragment f = FragWeekDialogFragment.getInstance();
-//                f.show(getChildFragmentManager(), FragWeekDialogFragment.TAG_EVENT_DIALOG);
-//            }
-//        });
-//
-//        btnsol = findViewById(R.id.btn_solChange);
-//        btnsol.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                FragSolDialogFragment f = FragSolDialogFragment.getInstance();
-//                f.show(getChildFragmentManager(), FragSolDialogFragment.TAG_EVENT_DIALOG);
-//            }
-//        });
+        btnweek = (TextView)findViewById(R.id.btn_weekChange);
+        btnweek.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                FragWeekDialogFragment f = FragWeekDialogFragment.getInstance();
+                f.show(getSupportFragmentManager(), FragWeekDialogFragment.TAG_EVENT_DIALOG);
+            }
+        });
+
+        btnsol = (TextView)findViewById(R.id.btn_solChange);
+        btnsol.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragSolDialogFragment f = FragSolDialogFragment.getInstance();
+                f.show(getSupportFragmentManager(), FragSolDialogFragment.TAG_EVENT_DIALOG);
+            }
+        });
 
         //사각 이미지뷰 클릭 시 이동
         ImageView step1=findViewById(R.id.step1);
@@ -110,6 +111,8 @@ public class RecListViewActivity extends AppCompatActivity {
         nav_closer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), CloserActivity.class);
+                startActivity(intent);
             }
         });
 

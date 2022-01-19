@@ -88,6 +88,8 @@ public class MediationActivity extends AppCompatActivity {
             nav_closer.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    Intent intent = new Intent(getApplicationContext(), CloserActivity.class);
+                    startActivity(intent);
                 }
             });
         }
