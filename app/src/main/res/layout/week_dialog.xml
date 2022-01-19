@@ -25,13 +25,15 @@
             android:layout_height="wrap_content"
             android:text="버튼을 눌러 주기를 변경하세요"
             android:textColor="#88889D"
-            android:textSize="7sp"/>
+            android:textSize="7sp"
+            android:layout_marginTop="10dp"/>
             <!--android:textAppearance="@style/some_id"/>-->
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_marginTop="11dp"
             >
 <!--
             <Button
@@ -60,10 +62,10 @@
 -->
             <TextView
                 android:id="@+id/btn_3day"
-                android:layout_width="54dp"
-                android:layout_height="33dp"
+                android:layout_width="34dp"
+                android:layout_height="21dp"
                 android:text="3일"
-                android:textSize="13dp"
+                android:textSize="8dp"
                 android:textColor="@color/black"
                 android:background="@drawable/choicebox"
                 android:gravity="center"
@@ -71,10 +73,10 @@
 
             <TextView
                 android:id="@+id/btn_7day"
-                android:layout_width="54dp"
-                android:layout_height="33dp"
+                android:layout_width="34dp"
+                android:layout_height="21dp"
                 android:text="7일"
-                android:textSize="13dp"
+                android:textSize="8dp"
                 android:textColor="@color/black"
                 android:background="@drawable/choicebox"
                 android:gravity="center"
@@ -82,12 +84,12 @@
 
             <TextView
                 android:id="@+id/btn_14day"
-                android:layout_width="54dp"
-                android:layout_height="33dp"
+                android:layout_width="34dp"
+                android:layout_height="21dp"
                 android:text="14일"
-                android:textSize="13dp"
+                android:textSize="8dp"
                 android:textColor="@color/black"
-                android:background="@drawable/rectangle_82"
+                android:background="@drawable/choicebox"
                 android:gravity="center"
                 android:layout_marginRight="15dp"/>
 
@@ -95,15 +97,15 @@
 
         <TextView
             android:id="@+id/btnSample"
-            android:layout_width="90dp"
-            android:layout_height="37dp"
+            android:layout_width="34dp"
+            android:layout_height="21dp"
             android:text="완료"
-            android:textSize="14dp"
+            android:textSize="8dp"
             android:textColor="@color/white"
             android:background="@drawable/button_green700"
             android:gravity="center"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"/>
+            android:layout_marginTop="13dp"/>
     </LinearLayout>
 
 </LinearLayout>
