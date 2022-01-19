@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Solution1">
+
+    <!-- 솔루션 클릭 시 나타나는 솔루션 가이드_와이어프레임 -->
+    <RelativeLayout
+        android:id="@+id/some_id"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/some_id"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <!-- 솔루션 몇 주차인지 -->
+        <!-- Rectangle 45 -->
+
+        <View
+            android:id="@+id/rectangle_4"
+            android:layout_width="110dp"
+            android:layout_height="51dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rectangle_4" />
+
+
+        <!-- 솔루션 내용 -->
+        <!-- Rectangle 46 -->
+
+
+        <!-- 솔루션 완료 -->
+
+        <TextView
+            android:id="@+id/some_id1"
+            android:layout_width="127dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="45dp"
+            android:gravity="top"
+            android:text="변화 되짚기" />
+        <!-- android:textAppearance="@style/some_id" />-->
+
+        <Button
+            android:id="@+id/btnresult"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="46dp"
+            android:background="@drawable/rectangle_4_3"
+            android:text="결과 보기"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="460dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="솔루션 후, 어떤 변화가 있었나요?"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="보내는 하루가 조금 더 가벼워졌어요." />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="명상할 때 피로하다는 생각이 들지 않아요." />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="항상 완벽해야 한다고 생각하지 않아요." />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="번아웃이 와도 무작정 무기력하지 않아요." />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="감정을 있는 그대로 받아들일 수 있어요." />
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이유는 모르겠지만 일상에 활력이 생겼어요." />
+
+            <CheckBox
+                android:id="@+id/checkBox7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="타인과 나의 다른 점을 이해할 수 있어요." />
+
+            <CheckBox
+                android:id="@+id/checkBox8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="있는 그대로의 나를 존중할 수 있게 되었어요." />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- Rectangle 47 -->
+</androidx.constraintlayout.widget.ConstraintLayout>

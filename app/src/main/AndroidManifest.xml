@@ -18,6 +18,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".RecListViewActivity"/>
+        <activity android:name=".Solution1"/>
+        <activity android:name=".Solution2"/>
+        <activity android:name=".Solution3"/>
+        <activity android:name=".Solution4"/>
+        <activity android:name=".SolutionRecord"/>
+
         <activity android:name=".MediationActivity"/>
         <activity android:name=".Onboarding2Activity" />
         <activity android:name=".Onboarding3Activity" />

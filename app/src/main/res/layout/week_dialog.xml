@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:background="@drawable/rectangle_312"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주기 변경"
+            android:textColor="#191D30"
+            android:textSize="10sp"/>
+            <!--android:textAppearance="@style/some_id"/>-->
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="버튼을 눌러 주기를 변경하세요"
+            android:textColor="#88889D"
+            android:textSize="7sp"
+            android:layout_marginTop="10dp"/>
+            <!--android:textAppearance="@style/some_id"/>-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="11dp"
+            >
+<!--
+            <Button
+                android:id="@+id/btn_3day"
+                android:layout_width="34dp"
+                android:layout_height="21dp"
+                android:background="@drawable/rectangle_82"
+                android:text="3일"/>
+
+
+            <Button
+                android:id="@+id/btn_7day"
+                android:layout_width="34dp"
+                android:layout_height="21dp"
+                android:background="@drawable/rectangle_82"
+                android:text="7일"/>
+
+
+            <Button
+                android:id="@+id/btn_14day"
+                android:layout_width="34dp"
+                android:layout_height="21dp"
+                android:background="@drawable/rectangle_82"
+                android:text="14일"/>
+
+-->
+            <TextView
+                android:id="@+id/btn_3day"
+                android:layout_width="34dp"
+                android:layout_height="21dp"
+                android:text="3일"
+                android:textSize="8dp"
+                android:textColor="@color/black"
+                android:background="@drawable/choicebox"
+                android:gravity="center"
+                android:layout_marginRight="15dp"/>
+
+            <TextView
+                android:id="@+id/btn_7day"
+                android:layout_width="34dp"
+                android:layout_height="21dp"
+                android:text="7일"
+                android:textSize="8dp"
+                android:textColor="@color/black"
+                android:background="@drawable/choicebox"
+                android:gravity="center"
+                android:layout_marginRight="15dp"/>
+
+            <TextView
+                android:id="@+id/btn_14day"
+                android:layout_width="34dp"
+                android:layout_height="21dp"
+                android:text="14일"
+                android:textSize="8dp"
+                android:textColor="@color/black"
+                android:background="@drawable/choicebox"
+                android:gravity="center"
+                android:layout_marginRight="15dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnSample"
+            android:layout_width="34dp"
+            android:layout_height="21dp"
+            android:text="완료"
+            android:textSize="8dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_green700"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="13dp"/>
+    </LinearLayout>
+
+</LinearLayout>
