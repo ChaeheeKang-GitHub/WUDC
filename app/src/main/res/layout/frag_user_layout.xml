@@ -52,8 +52,8 @@
                     android:layout_height="33dp"
                     android:layout_weight="1"
                     android:background="@drawable/rectangle_3"
-                    android:text="주기 변경"
-                    android:textAppearance="@style/some_id" />
+                    android:text="주기 변경"/>
+                    <!--android:textAppearance="@style/some_id" />-->
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btn_solChange"
@@ -61,8 +61,8 @@
                     android:layout_height="33dp"
                     android:layout_weight="1"
                     android:background="@drawable/rectangle_3"
-                    android:text="솔루션 변경"
-                    android:textAppearance="@style/some_id" />
+                    android:text="솔루션 변경"/>
+                    <!--android:textAppearance="@style/some_id" />-->
 
 
             </LinearLayout>

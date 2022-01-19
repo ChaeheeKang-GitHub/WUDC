@@ -92,8 +92,8 @@
             android:layout_marginLeft="23dp"
             android:layout_marginTop="45dp"
             android:gravity="top"
-            android:text="업무 외 시간 가지기"
-            android:textAppearance="@style/some_id" />
+            android:text="업무 외 시간 가지기"/>
+        <!-- android:textAppearance="@style/some_id" /> -->
 
         <View
             android:id="@+id/rectangle_4_2"

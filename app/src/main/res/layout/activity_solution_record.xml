@@ -54,8 +54,8 @@
             android:layout_marginLeft="52dp"
             android:layout_marginTop="53dp"
             android:gravity="top"
-            android:text="솔루션 3일차"
-            android:textAppearance="@style/some_id" />
+            android:text="솔루션 3일차"/>
+           <!-- android:textAppearance="@style/some_id" />-->
 
         <View
             android:id="@+id/rectangle_4_2"

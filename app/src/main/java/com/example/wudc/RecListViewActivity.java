@@ -44,9 +44,7 @@ public class RecListViewActivity extends AppCompatActivity {
         listAdapter.addItem(new RecItem("2단계", "업무 외 시간 가지기", "업무에 과도한 집중은 번아웃의 지름길! 일이 주는 자극에 더 이상 속지 마세요"));
         listAdapter.addItem(new RecItem("3단계", "그림자와 친해지기","그림자와 조화를 이룬 자아는... 자다가도 떡을 먹는다? 나만 아는 그림자 부수기"));
         listAdapter.addItem(new RecItem("4단계", "변화 되짚기", "wow! 끝내 버리시는 당신은 유노우윤호? 고생한 만큼 오늘은 나를 더 쉽게 돌아볼 수 있을 거예요"));
-        listAdapter.addItem(new RecItem("5단계", "등등", "등등"));
-        listAdapter.addItem(new RecItem("6단계", "등등","등등"));
-        listAdapter.addItem(new RecItem("7단계", "등등","등등"));
+
 
         //리스트뷰에 Adapter 설정
         listview.setAdapter(listAdapter);
@@ -104,12 +102,13 @@ public class RecListViewActivity extends AppCompatActivity {
                 public void onClick(View view) {
                     Toast.makeText(context, "단계 : "+recItem.getNum()+" "+" 솔루션 : "+recItem.getName()+" "+" 내용 : "+recItem.getDes(), Toast.LENGTH_SHORT).show();
                     // 페이지 넘어가기
-                    /*Intent intent = new Intent(getApplicationContext(), 넘어갈액티비티명.class);
-                    startActivity(intent);*/
-
+                    Intent intent = new Intent(RecListViewActivity.this,Solution1.class);
+                    startActivity(intent);
 
                 }
             });
+
+            
 
             return convertView;  //뷰 객체 반환
         }
