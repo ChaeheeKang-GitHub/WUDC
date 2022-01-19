@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:background="@color/orange_200"
     android:padding="20dp"
     android:orientation="vertical">
@@ -12,7 +12,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="31dp"
         android:fontFamily="@font/notosanskrbold"
         android:text="Mediation"
         android:textColor="@color/black"
@@ -22,7 +22,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="15dp"
         android:text="당신을 위한 상황 별 영상 가이드 지침서"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,8 +31,12 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="300dp"
-        android:layout_height="364dp"
+        android:layout_width="330dp"
+        android:layout_height="380dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="5dp"
         android:layout_gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,8 +47,8 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
         android:fontFamily="@font/notosanskrbold"
-        android:layout_marginTop="21dp"
         android:text="오늘, 명상 하셨나요?"
         android:textColor="@color/black"
         android:textSize="22dp" />
@@ -53,10 +57,8 @@
         android:id="@+id/dateText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="7dp"
-        android:textColor="@color/black"
-        android:fontFamily="@font/notosanskrbold"
-        android:text="2022년 1월 4주차"
+        android:layout_marginTop="15dp"
+        android:text="2022년 1얼 4주차"
         app:layout_constraintBottom_toTopOf="@id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,18 +66,19 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dateText">
 
         <TextView
             android:id="@+id/mon_text"
-            android:paddingLeft="12dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -128,8 +131,12 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -139,50 +146,43 @@
             android:id="@+id/mon_cb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:buttonTint="@color/orange_700" />
+            android:layout_weight="1" />
 
         <CheckBox
             android:id="@+id/tue_cb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:buttonTint="@color/orange_700"/>
+            android:layout_weight="1" />
 
         <CheckBox
             android:id="@+id/wed_cb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:buttonTint="@color/orange_700"/>
+            android:layout_weight="1" />
 
         <CheckBox
             android:id="@+id/thr_cb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:buttonTint="@color/orange_700"/>
+            android:layout_weight="1" />
 
         <CheckBox
             android:id="@+id/fir_cb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:buttonTint="@color/orange_700"/>
+            android:layout_weight="1" />
 
         <CheckBox
             android:id="@+id/sat_cb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:buttonTint="@color/orange_700"/>
+            android:layout_weight="1" />
 
         <CheckBox
             android:id="@+id/sun_cb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:buttonTint="@color/orange_700"/>
+            android:layout_weight="1" />
 
     </LinearLayout>
 

@@ -1,5 +1,6 @@
 package com.example.wudc;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -16,6 +17,7 @@ public class MediationActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private ArrayList<RecyclerViewItem> mList;  //버튼리스트
     private RecyclerViewAdapter mRecyclerViewAdapter;
+//    private Context mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +30,7 @@ public class MediationActivity extends AppCompatActivity {
             addItem(i);    //*여기로 버튼 이름 전달해서 버튼 별로 이미지 변경 필요
         }
 
-        mRecyclerViewAdapter = new RecyclerViewAdapter(mList);
+        mRecyclerViewAdapter = new RecyclerViewAdapter(this, mList);
         mRecyclerView.setAdapter(mRecyclerViewAdapter);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL,false));   //가로 리사이클
 
