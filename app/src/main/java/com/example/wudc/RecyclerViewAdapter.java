@@ -57,9 +57,16 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                         }
 
                     }else{   // 명상이미지를 클릭했을때
-                        mediBtn.setImageResource(R.drawable.medi_btn1_blackground);
+//                        mediBtn.setImageResource(R.drawable.medi_btn1_blackground);
                         //관련 문구와 버튼이 보여진다
                         //mentText.setVisibility(View.VISIBLE);
+                        if(item.getType() == 0) {
+                            mediBtn.setImageResource(R.drawable.medi1_bg);
+                        }
+                        else {
+                            mediBtn.setImageResource(R.drawable.medi2_bg);
+
+                        }
                         playBtn.setVisibility(View.VISIBLE);
 
                     }
