@@ -6,21 +6,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Onboarding3Activity extends AppCompatActivity {
+public class Onboarding4Activity extends AppCompatActivity {
 
-    TextView choice[] = new TextView[16];
+    TextView choice[] = new TextView[17];
     Integer choId[] = { R.id.cho1, R.id.cho2, R.id.cho3, R.id.cho4, R.id.cho5, R.id.cho6, R.id.cho7,R.id.cho8,R.id.cho9,R.id.cho10,
-            R.id.cho11, R.id.cho12, R.id.cho13, R.id.cho14, R.id.cho15, R.id.cho16 };
+            R.id.cho11, R.id.cho12, R.id.cho13, R.id.cho14, R.id.cho15, R.id.cho16, R.id.cho17 };
     Integer max = 0;
+    Integer selected = 0;
     ImageView btnNext;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_onboarding3);
+        setContentView(R.layout.activity_onboarding4);
 
         for(int i = 0; i < choId.length; i++){
             final int index;
@@ -31,11 +33,16 @@ public class Onboarding3Activity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     if(!choice[index].isSelected()){    //항목이 선택되어있지않으면
-                        if(max < 2){    //2개보다 적게 선택되어있으면
+                        if(max < 1){    //1개보다 적게 선택되어있으면
                             max++;
-                            choice[index].setSelected(!choice[index].isSelected());
-                            choice[index].setTextColor(Color.parseColor("#FFFFFF"));
+                            selected = index;
+                        } else if (max == 1) {
+                            choice[selected].setSelected(!choice[selected].isSelected());
+                            choice[selected].setTextColor(Color.parseColor("#191D30"));
+                            selected = index;
                         }
+                        choice[index].setSelected(!choice[index].isSelected());
+                        choice[index].setTextColor(Color.parseColor("#FFFFFF"));
 
                     } else {    //항목이 이미 선택되어있으면
                         max--;
@@ -50,7 +57,7 @@ public class Onboarding3Activity extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Onboarding4Activity.class);
+                Intent intent = new Intent(getApplicationContext(), Onboarding5Activity.class);
                 startActivity(intent);
             }
         });

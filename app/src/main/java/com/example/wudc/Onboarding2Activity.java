@@ -12,11 +12,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Onboarding2Activity extends AppCompatActivity {
 
-    TextView choice[] = new TextView[37];
+    TextView choice[] = new TextView[34];
     Integer choId[] = { R.id.cho1, R.id.cho2, R.id.cho3, R.id.cho4, R.id.cho5, R.id.cho6, R.id.cho7,R.id.cho8,R.id.cho9,R.id.cho10,
             R.id.cho11, R.id.cho12, R.id.cho13, R.id.cho14, R.id.cho15, R.id.cho16, R.id.cho17, R.id.cho18, R.id.cho19, R.id.cho20,
             R.id.cho21, R.id.cho22, R.id.cho23, R.id.cho24, R.id.cho25, R.id.cho26, R.id.cho27, R.id.cho28, R.id.cho29, R.id.cho30,
-            R.id.cho31, R.id.cho32, R.id.cho33, R.id.cho34, R.id.cho35, R.id.cho36, R.id.cho37 };
+            R.id.cho31, R.id.cho32, R.id.cho33, R.id.cho34 };
     Integer max = 0;
     ImageView btnNext;
 
