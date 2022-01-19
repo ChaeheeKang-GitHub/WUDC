@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/orange_200">
 
     <!--<HorizontalScrollView
         android:id="@+id/horScrollView"
@@ -15,29 +16,57 @@
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
-        android:layout_centerHorizontal="true">
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="600dp"
+                android:layout_centerHorizontal="true" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="600dp"
-            android:layout_centerHorizontal="true" />
-
-
+            <TextView
+                android:id="@+id/button"
+                android:layout_width="121dp"
+                android:layout_height="41dp"
+                android:text="기록하기"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/notosanskrbold"
+                android:background="@drawable/button_green700"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="49dp"/>
+        </LinearLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/button"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_centerHorizontal="true"
-        android:fontFamily="@font/notosanskrregular"
-        android:text="기록하기"
-        android:textColor="@color/gray"
-        android:textSize="15sp" />
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/nav_mediation"
+            android:layout_width="wrap_content"
+            android:layout_height="93dp"
+            android:src="@drawable/nav_mediation_deactive" />
+        <ImageView
+            android:id="@+id/nav_record"
+            android:layout_width="wrap_content"
+            android:layout_height="93dp"
+            android:src="@drawable/nav_record_active" />
+        <ImageView
+            android:id="@+id/nav_closer"
+            android:layout_width="wrap_content"
+            android:layout_height="93dp"
+            android:src="@drawable/nav_closer_active" />
+    </LinearLayout>
+
 </LinearLayout>
 
 
-
-    <!--</HorizontalScrollView>-->
