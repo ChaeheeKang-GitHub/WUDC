@@ -81,8 +81,8 @@ public class MediationActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
 //                    //기록하기 액티비티와 연결해주세요
-//                    Intent intent = new Intent(getApplicationContext(), MediationActivity.class);
-//                    startActivity(intent);
+                    Intent intent = new Intent(getApplicationContext(), RecListViewActivity.class);
+                    startActivity(intent);
                 }
             });
             nav_closer.setOnClickListener(new View.OnClickListener() {
