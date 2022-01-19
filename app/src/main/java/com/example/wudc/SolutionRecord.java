@@ -24,7 +24,7 @@ public class SolutionRecord extends AppCompatActivity implements View.OnClickLis
             case R.id.btnsave:
                 new AlertDialog.Builder(this)
                         .setTitle("기록 저장")
-                        .setMessage("저장되었습니다.")
+                        .setMessage("명상하기가 완료되었습니다.")
                         .setNeutralButton("확인", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dlg, int sumthin) {
                                 Intent intent = new Intent(getApplicationContext(), RecListViewActivity.class);
@@ -34,6 +34,7 @@ public class SolutionRecord extends AppCompatActivity implements View.OnClickLis
                         .show(); // 팝업창 보여줌
                 break;
         }
+
     }
 
     @Override
